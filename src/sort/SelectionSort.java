@@ -19,7 +19,7 @@ public class SelectionSort {
 			System.out.print(nums[i]+", ");
 		}
 	}
-// ¼±ÅÃÁ¤·Ä Selection Sort, ½Ã°£ º¹Àâµµ O(N^2), °ø°£ º¹Àâµµ O(1)
+// ì„ íƒì •ë ¬ Selection Sort, ì‹œê°„ ë³µì¡ë„ O(N^2), ê³µê°„ ë³µì¡ë„ O(1)
 	public static void sort(int[] nums) {
 		for(int i=0; i<nums.length -1; i++) {
 			for(int j=i+1; j<nums.length; j++) {

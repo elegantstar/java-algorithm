@@ -5,30 +5,30 @@ public class InsertionSort {
 	public static void main(String[] args) {
 
 		/**
-		 * InsertionSort : »ðÀÔ Á¤·Ä
+		 * InsertionSort : ì‚½ìž… ì •ë ¬
 		 * 
 		 * nums = [5, 1, 7, 2, 4]
 		 * 
-		 * 1È¸Â÷ : [1, 5, 7, 2, 4] 	(1À» 5ÀÇ ¿ÞÂÊ¿¡ »ðÀÔ)
-		 * 2È¸Â÷ : [1, 5, 7, 2, 4]	(7À» 5ÀÇ ¿ìÃø¿¡ »ðÀÔ)
-		 * 3È¸Â÷ : [1, 2, 5, 7, 4]	(2¸¦ 1ÀÇ ¿ìÃø, 5ÀÇ ÁÂÃø¿¡ »ðÀÔ)
-		 * 4È¸Â÷ : [1, 2, 4, 5, 7]	(4¸¦ 2ÀÇ ¿ìÃø, 5ÀÇ ÁÂÃø¿¡ »ðÀÔ)
+		 * 1íšŒì°¨ : [1, 5, 7, 2, 4] 	(1ì„ 5ì˜ ì™¼ìª½ì— ì‚½ìž…)
+		 * 2íšŒì°¨ : [1, 5, 7, 2, 4]	(7ì„ 5ì˜ ìš°ì¸¡ì— ì‚½ìž…)
+		 * 3íšŒì°¨ : [1, 2, 5, 7, 4]	(2ë¥¼ 1ì˜ ìš°ì¸¡, 5ì˜ ì¢Œì¸¡ì— ì‚½ìž…)
+		 * 4íšŒì°¨ : [1, 2, 4, 5, 7]	(4ë¥¼ 2ì˜ ìš°ì¸¡, 5ì˜ ì¢Œì¸¡ì— ì‚½ìž…)
 		 * 
-		 * ÃÖÀûÀÇ ½Ã°£ º¹Àâµµ : O(n)
-		 * ÃÖ¾ÇÀÇ ½Ã°£ º¹Àâµµ : O(n^2)
+		 * ìµœì ì˜ ì‹œê°„ ë³µìž¡ë„ : O(n)
+		 * ìµœì•…ì˜ ì‹œê°„ ë³µìž¡ë„ : O(n^2)
 		 * 
 		 */
 		
 	}
 	
-	// ÃÖÀûÀÇ ½Ã°£ º¹Àâµµ : O(n)
-	// Æò±Õ, ÃÖ¾ÇÀÇ ½Ã°£ º¹Àâµµ : O(n^2)
+	// ìµœì ì˜ ì‹œê°„ ë³µìž¡ë„ : O(n)
+	// í‰ê· , ìµœì•…ì˜ ì‹œê°„ ë³µìž¡ë„ : O(n^2)
 	public static void insertionSort(int[] nums) {
 		for(int i = 1; i < nums.length; i++) {
 			int temp = nums[i];
 			for(int j = i-1; j >= 0; j--) {
 				if(temp < nums[j]) {
-					nums[j+1] = nums[i]; // shift ¿¬»ê
+					nums[j+1] = nums[i]; // shift ì—°ì‚°
 					nums[j] = temp;
 				} else {
 					nums[j+1] = temp;

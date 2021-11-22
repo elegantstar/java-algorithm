@@ -3,15 +3,15 @@ package sort;
 public class BubbleSort {
 
 	public static void main(String[] args) {
-		// Comparable Sort(ºñ±³ÇÏ´Â Á¤·Ä) Áß¿¡¼­ °¡Àå ºü¸¥ ½Ã°£º¹Àâµµ´Â NlogN
+		// Comparable Sort(ë¹„êµí•˜ëŠ” ì •ë ¬) ì¤‘ì—ì„œ ê°€ìž¥ ë¹ ë¥¸ ì‹œê°„ë³µìž¡ë„ëŠ” NlogN
 		/**
-		 * Sort : µ¥ÀÌÅÍ¸¦ ¿À¸§Â÷¼ø ¶Ç´Â ³»¸²Â÷¼øÀ¸·Î Á¤·ÄÇÏ´Â °Í
+		 * Sort : ë°ì´í„°ë¥¼ ì˜¤ë¦„ì°¨ìˆœ ë˜ëŠ” ë‚´ë¦¼ì°¨ìˆœìœ¼ë¡œ ì •ë ¬í•˜ëŠ” ê²ƒ
 		 * nums = [5, 7, 1, 2, 4]
 		 * 
-		 * 1È¸Â÷ : [5, 1, 2, 4, 7]
-		 * 2È¸Â÷ : [1, 2, 4, 5, 7]
-		 * 3È¸Â÷ : [1, 2, 4, 5, 7]
-		 * 4È¸Â÷ : [1, 2, 4, 5, 7]
+		 * 1íšŒì°¨ : [5, 1, 2, 4, 7]
+		 * 2íšŒì°¨ : [1, 2, 4, 5, 7]
+		 * 3íšŒì°¨ : [1, 2, 4, 5, 7]
+		 * 4íšŒì°¨ : [1, 2, 4, 5, 7]
 		 */
 		
 		int nums[] = {5, 7, 1, 2, 4};
@@ -24,7 +24,7 @@ public class BubbleSort {
 		
 	}
 	
-// Bubble Sort, ½Ã°£ º¹Àâµµ O(N^2), °ø°£ º¹Àâµµ O(1)
+// Bubble Sort, ì‹œê°„ ë³µìž¡ë„ O(N^2), ê³µê°„ ë³µìž¡ë„ O(1)
 	public static void bubbleSort(int nums[]) {
 		for(int i=nums.length-1; i > 0 ; i--) {
 			for(int j=0; j < i; j++) {
@@ -38,12 +38,12 @@ public class BubbleSort {
 				
 	}
 	
-	// 1. ÃÖÀûÀÇ ½Ã°£ º¹Àâµµ(Best Time Complexity) : O(n), Á¤·ÄµÈ »óÅÂ
-	// 2. Æò±Õ ½Ã°£ º¹Àâµµ(Average Time Complexity) : O(n^2)
-	// 3. ÃÖ¾ÇÀÇ ½Ã°£ º¹Àâµµ(Worst Time COmplexity) : O(n^2)
+	// 1. ìµœì ì˜ ì‹œê°„ ë³µìž¡ë„(Best Time Complexity) : O(n), ì •ë ¬ëœ ìƒíƒœ
+	// 2. í‰ê·  ì‹œê°„ ë³µìž¡ë„(Average Time Complexity) : O(n^2)
+	// 3. ìµœì•…ì˜ ì‹œê°„ ë³µìž¡ë„(Worst Time COmplexity) : O(n^2)
 	
-	// °¡Àå ÀÇ¹Ì°¡ ÀÖ´Â ½Ã°£ º¹Àâµµ : ÃÖ¾ÇÀÇ ½Ã°£ º¹Àâµµ
-	// Ç×»ó ÃÖ¾ÇÀÇ »óÈ²¿¡ ´ëºñ ÇØ¾ß ÇÑ´Ù. (default : ÃÖ¾Ç)
+	// ê°€ìž¥ ì˜ë¯¸ê°€ ìžˆëŠ” ì‹œê°„ ë³µìž¡ë„ : ìµœì•…ì˜ ì‹œê°„ ë³µìž¡ë„
+	// í•­ìƒ ìµœì•…ì˜ ìƒí™©ì— ëŒ€ë¹„ í•´ì•¼ í•œë‹¤. (default : ìµœì•…)
 	
 	public static void bubbleSortOpt(int[] nums) {
 		for(int i=nums.length-1; i > 0 ; i--) {
